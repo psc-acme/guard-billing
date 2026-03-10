@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/guard-billing",
+    "description": "Package guard-billing for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\GuardBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/finder": "^7.0",
+        "illuminate/database": "^11.0",
+        "symfony/serializer": "^7.0",
+        "nette/utils": "^4.0",
+        "psc-acme/sdk-billing": "^1.0",
+        "psc-acme/factory-billing": "^1.0",
+        "psc-acme/module-billing": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
